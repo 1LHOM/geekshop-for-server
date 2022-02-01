@@ -23,7 +23,7 @@ def get_same_products(hot_product):
 
 def index(request):
 
-    products_list = Product.objects.all()[:4]
+    products_list = Product.objects.select_related()[:4]
     print(products_list.query)
 
     context = {

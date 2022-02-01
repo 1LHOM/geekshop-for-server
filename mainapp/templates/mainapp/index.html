@@ -32,9 +32,12 @@
             <div class="block">
                 <a href="{% url 'products:product' product.pk %}"><img src="/media/{{ product.image }}" alt="" width="270px">
                     <div class="text">
-                        <img src="{% static '/img/icon-hover.png' %}" alt="img">
+{#                        <img src="{% static '/img/icon-hover.png' %}" alt="img">#}
                         <h4>{{ product.name}}</h4>
                         <p>{{ product.short_desc}}</p>
+                        <p>Категория: {{ product.category.name }}</p>
+                        <p>Цена: {{ product.price}}</p>
+                        <p>На складе: {{ product.quantity}}</p>
                     </div>
                 </a>
             </div>

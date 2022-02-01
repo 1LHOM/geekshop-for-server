@@ -1008,6 +1008,7 @@ html, body {
 	font-weight: 700;
 	line-height: 30px;
 	text-align: center;
+    margin: 15px auto 0;
 }
 .tab-content a .text p {
 	color:  #6c6c6c;
@@ -1017,7 +1018,8 @@ html, body {
 	margin: 15px 15px;
 }
 .tab-content a .text img {
-	margin: 70px auto 0;
+	margin: 10px auto 0;
+    position: relative;
 }
 .tab-content a:hover .text {
 	display: block;
